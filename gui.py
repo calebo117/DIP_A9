@@ -123,16 +123,16 @@ class Morpho:
 		if (var == 0):
 				if (self.count == 1):
 					print("RUNNING Erode on image: ", self.imvar.get())
-					img=cv2.imread("binary_1.png", 0)
+					img=cv2.imread(self.imvar.get()+".png", 0)
 					newImg=(eroder(img))
-					cv2.imwrite("binary_1_result.png", newImg)
-					self.resphoto.configure(file="binary_1_result.png")
+					cv2.imwrite(self.imvar.get()+"_result.png", newImg)
+					self.resphoto.configure(file=self.imvar.get()+"_result.png")
 				elif(self.count != 1):
 					print("RUNNING Erode on image: ", self.imvar.get())
-					img=cv2.imread("binary_1_result.png", 0)
+					img=cv2.imread(self.imvar.get()+"_result.png", 0)
 					newImg=(eroder(img))
-					cv2.imwrite("binary_1_result.png", newImg)
-					self.resphoto.configure(file="binary_1_result.png")
+					cv2.imwrite(self.imvar.get()+"_result.png", newImg)
+					self.resphoto.configure(file=self.imvar.get()+"_result.png")
 
 		elif(var == 1):
 			print("RUNNING Dilate ", var)
