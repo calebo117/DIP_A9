@@ -1,6 +1,12 @@
 # DIP_A9
 Digital Image Processing Project - Team A9 - Morphological Operations
 
+Presentation Link: https://docs.google.com/presentation/d/1F_Ba2MjPBj93EiILTtxTlsrjyk7vGnHcf4_S4pWLHWc/edit?usp=sharing
+
+## How to Run
+in a python configured terminal with cv2, numpy, and tkinter libraries type:
+"python gui.py"
+
 ## Objectives
 
 #### Identify the effects of morphological operations on an image
